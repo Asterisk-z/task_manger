@@ -3,4 +3,4 @@
 ## Task Manager
 
 Postman Collection
-[Postman Collection](https://api.postman.com/collections/13402844-402393e9-a89c-48de-b60e-2aee75d122b7?access_key=PMAT-01J3K21C4VHKKFFTS3EAFXM4JN).
+[Postman Collection](https://www.postman.com/olangdan17/workspace/test/collection/13402844-622b565c-87bd-4bd9-8d92-453945ac4b9e?action=share&creator=13402844).
