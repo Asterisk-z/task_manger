@@ -13,14 +13,16 @@ Route::prefix('auth')->group(function () {
 });
 
 Route::middleware('auth:sanctum')->group(function () {
-    Route::get('/users', function (Request $request) {
-        return User::all();
+
+    Route::middleware(['can:read users'])->group(function () {
+        Route::get('/users', function (Request $request) {
+            return User::all();
+        });
+
+        Route::get('/user', function (Request $request) {
+            return $request->user();
+        })->middleware();
     });
-
-    Route::get('/user', function (Request $request) {
-        return $request->user();
-    })->middleware();
-
     Route::apiResource('task', TaskController::class);
 
 });
